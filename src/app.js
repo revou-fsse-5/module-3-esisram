@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const getRecipeBtn = document.getElementById('getRecipeBtn')
-  const recipeContainer = document.getElementById('recipeContainer')
+  var getRecipeBtn = document.getElementById('getRecipeBtn')
+  var recipeContainer = document.getElementById('recipeContainer')
 
   getRecipeBtn.addEventListener('click', () => {
     fetchRandomRecipe()
   })
 
-  async function fetchRandomRecipe() {
+  function fetchRandomRecipe() {
     try {
       const recipe = {
         title: 'Spaghetti Carbonara',
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       displayRecipe(recipe)
     } catch (error) {
-      console.log('Error fetching the recipe:', error)
+      console.log('How does the error happen?:', error)
       recipeContainer.innerHTML = '<p>Are you failed to load receipt. Please try again amateur.</p>'
     }
   }
@@ -24,21 +24,20 @@ document.addEventListener('DOMContentLoaded', () => {
   function displayRecipe(recipe) {
     recipeContainer.innerHTML = ''
 
-    const recipeTitle = document.createElement('h2')
+    var recipeTitle = document.createElement('h1')
     recipeTitle.className = 'recipe-title'
     recipeTitle.textContent = recipe.title
+    recipeContainer.appendChild(recipeTitle) //display title
 
-    const recipeInstructions = document.createElement('p')
+    var recipeInstructions = document.createElement('p')
     recipeInstructions.className = 'recipe-instructions'
     recipeInstructions.textContent = recipe.instructions
+    recipeContainer.appendChild(recipeInstructions) //display instructions
 
-    const recipeImage = document.createElement('img')
+    var recipeImage = document.createElement('img')
     recipeImage.className = 'recipe-image'
     recipeImage.src = recipe.image
     recipeImage.alt = recipe.title
-
-    recipeContainer.appendChild(recipeTitle)
-    recipeContainer.appendChild(recipeInstructions)
-    recipeContainer.appendChild(recipeImage)
+    recipeContainer.appendChild(recipeImage) //display image
   }
 })
