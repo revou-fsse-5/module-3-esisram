@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
   var recipeContainer = document.getElementById('recipeContainer')
 
   getRecipeBtn.addEventListener('click', () => {
-    fetchRandomRecipe()
+    fetchRecipe()
   })
 
-  function fetchRandomRecipe() {
+  function fetchRecipe() {
     try {
       const recipe = {
         title: 'Spaghetti Carbonara',
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       displayRecipe(recipe)
     } catch (error) {
-      console.log('How does the error happen?:', error)
+      console.log('Where is the error?:', error)
       recipeContainer.innerHTML = '<p>Are you failed to load receipt. Please try again amateur.</p>'
     }
   }
