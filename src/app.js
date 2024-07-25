@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   var getRecipeBtn = document.getElementById('getRecipeBtn')
   var recipeContainer = document.getElementById('recipeContainer')
+  var recipeCont = document.getElementById('cont')
   var recipeVisiting = document.querySelector('#header')
 
   getRecipeBtn.addEventListener('click', () => {
@@ -11,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     try {
       recipeVisiting.innerHTML = 'Here is your Recipe'
       recipeVisiting.style.color = 'blue'
+      recipeCont.style.backgroundColor = 'Yellow'
 
       const recipe = {
         title: 'Spaghetti Carbonara',
