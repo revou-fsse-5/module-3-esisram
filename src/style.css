@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
+  background-color: grey;
   margin: 0;
   padding: 0;
   display: flex;
@@ -12,7 +12,7 @@ body {
 .container {
   text-align: center;
   background-color: #ffffff;
-  padding: 20px;
+  padding: 5%;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -37,19 +37,16 @@ button:hover {
 }
 
 .recipe-container {
-  margin-top: 20px;
+  margin-top: 100px;
   text-align: left;
 }
-
 .recipe-title {
   font-size: 24px;
   margin-bottom: 10px;
 }
-
 .recipe-instructions {
   margin-top: 10px;
 }
-
 .recipe-image {
   max-width: 100%;
   border-radius: 8px;

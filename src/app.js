@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   var getRecipeBtn = document.getElementById('getRecipeBtn')
   var recipeContainer = document.getElementById('recipeContainer')
+  var recipeVisiting = document.querySelector('#header')
 
   getRecipeBtn.addEventListener('click', () => {
     fetchRecipe()
@@ -8,6 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function fetchRecipe() {
     try {
+      recipeVisiting.innerHTML = 'Here is your Recipe'
+      recipeVisiting.style.color = 'blue'
+
       const recipe = {
         title: 'Spaghetti Carbonara',
         instructions:
@@ -38,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     recipeImage.className = 'recipe-image'
     recipeImage.src = recipe.image
     recipeImage.alt = recipe.title
+    recipeImage.style.width = '150px'
     recipeContainer.appendChild(recipeImage) //display image
   }
 })
