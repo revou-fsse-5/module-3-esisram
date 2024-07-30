@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // var recipeCont = document.getElementById('header')
+  var recipeCont = document.getElementsByTagName('header')[0]
+  var recipeVisiting = document.querySelector('#h1_header')
   var getRecipeBtn = document.getElementById('getRecipeBtn')
   var recipeContainer = document.getElementById('recipeContainer')
-  var recipeCont = document.getElementById('cont')
-  var recipeVisiting = document.querySelector('#header')
   var recipeLink = 'https://www.themealdb.com/api/json/v1/1/random.php'
 
   getRecipeBtn.addEventListener('click', () => {
