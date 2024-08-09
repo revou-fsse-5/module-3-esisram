@@ -7,6 +7,6 @@
     "esModuleInterop": true, // Aktifkan interoperabilitas antara CommonJS dan ES Modules
     "forceConsistentCasingInFileNames": true // Paksa konsistensi penggunaan huruf besar dan kecil dalam nama file
   },
-  "include": ["./src/app.ts"], // Sertakan file TypeScript Anda
+  "include": ["./src/**/*.ts"], // Sertakan file TypeScript Anda
   "exclude": ["node_modules"] // Kecualikan direktori node_modules
 }
