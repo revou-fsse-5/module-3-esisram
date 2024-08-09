@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES2015", // Atur versi target ECMAScript
+    "lib": ["ES2015", "DOM"], // Sertakan pustaka yang diperlukan
+    "strict": true, // Aktifkan opsi pemeriksaan tipe yang ketat
+    "outDir": "./dist", // Tentukan direktori keluaran untuk file yang telah dikompilasi
+    "esModuleInterop": true, // Aktifkan interoperabilitas antara CommonJS dan ES Modules
+    "forceConsistentCasingInFileNames": true // Paksa konsistensi penggunaan huruf besar dan kecil dalam nama file
+  },
+  "include": ["./src/app.ts"], // Sertakan file TypeScript Anda
+  "exclude": ["node_modules"] // Kecualikan direktori node_modules
+}
