@@ -4,7 +4,7 @@
 
 ## Progress Report for Random Recipe Finder
 
-Project Title: Random Recipe Finder
+Project Title: [Random Recipe Finder] (https://spiffy-sundae-dde082.netlify.app/)
 Submission Date: August, 9, 2024
 Prepared by: [Esis Ramadhan](https://github.com/esisram)
 
